@@ -1,0 +1,479 @@
+*{
+    font-family:"SF Pro Display";
+}
+
+body{
+    margin-left: 0px;
+}
+
+.signupBtn{
+    background-color: inherit;
+    width: 100px;
+    height: 40px;
+    color: black;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.signupBtn:hover {
+   background-color: #f6f6f6;
+   color: black;
+}
+
+.signinBtn{
+    background-color: #18189b;
+    width: 100px;
+    height: 40px;
+    color: white;
+    margin-left: 10px;
+}
+
+.signinBtn:hover ,.signinpBtn:active{
+   background-color: #18189bd9;
+   color: rgb(255, 255, 255);
+}
+
+
+/*------------------------------------------------------------------------*/
+#openadddialog{
+    background:rgb(21, 18, 61);
+    color:rgb(236, 232, 232);
+    width:200px;
+    height:35px;
+    position: absolute;
+    margin-top: 80px;
+    outline: none;
+    border: 2px solid rgb(34, 33, 33);
+}
+
+#addcoursecontent:active,#addcoursecontent:focus{
+    background:rgb(21, 18, 61,0.95);
+    color:rgb(236, 232, 232);
+    outline: none;
+}
+
+#catname,#coursename,#coursedesc,#courseprice{
+   width:340px;
+   height: 40px;
+   font-size: 16px;
+   background-color: inherit;
+   padding-left: 15px;
+   border-radius: 6px;
+   border: 1.5px solid rgb(71, 71, 71);
+   color: rgb(0, 0, 0);
+}
+
+#courseurls{
+    width:290px;
+    height: 40px;
+    font-size: 13px;
+    background-color: inherit;
+    padding-left: 15px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.courseImg{
+    width: 250px ;
+    height: 120px;
+    margin-top:10px; 
+    margin-left:10px; 
+    margin-right:10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(236, 235, 235);
+}
+
+.courseListItem{
+    text-decoration:none;
+    color:black;
+    width:270px;
+    margin-left:10px;
+    margin-bottom:10px;
+}
+
+.courseListItem:hover,.courseListItem:visited,.courseListItem:active,.courseListItem:focus{
+    text-decoration:none;
+    color: black;
+}
+
+#catname:active,#coursename:active,#coursedesc:active,#courseurls:active,#courseurls2:active,#courseprice:active
+#catname:focus,#coursename:focus,#coursedesc:focus,#courseurls:focus,#courseurls2:focus,#courseprice:focus{
+    outline: none;
+}
+
+#coursedesc,#coursename,#courseprice{
+    margin-top: 10px;
+}
+
+#catname:active, #catname:focus{
+   outline: none;
+}
+
+.open a:hover{
+    background:rgb(21, 18, 61,0.95);
+    color:white;
+}
+
+.modal{
+    top:0px;
+    left:0px;
+    background:white;
+    color:black;
+    position:fixed;
+    padding-top:20px;
+    width:100%;
+    min-height: 100%;
+    text-align:center;
+    vertical-align:middle;
+    display:none;
+}
+
+#closeDialog{
+    position: absolute;
+    right: 30px;
+    background-color: inherit;
+    border: none;
+    font-size: 30px;
+    color: red;
+}
+
+#closeDialog:active{
+    outline: none;
+    color: rgba(255, 0, 0, 0.801);
+}
+
+#insertcatBtn{
+    color: rgb(167, 21, 21);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#insertcontentBtn,#cancel{
+    color: rgb(167, 21, 21);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#insertcatBtn:active, #insertcatBtn:focus,  
+    #insertcontentBtn:active, #insertcontentBtn:focus{
+    outline: none;
+}
+ 
+.fileUploadInput,.fileUploadInputccat {
+    display: grid;
+    grid-gap: 10px;
+    position: relative;
+    margin-top: 10px;
+    z-index: 1; 
+}
+    
+.fileUploadInput label,.fileUploadInputccat label {
+    display: flex;
+    align-items: center;
+    color: setColor(primary, 0.5);
+    transition: .4s ease;
+    font-size: .75em;
+    font-weight: regular; 
+}
+      
+.fileUploadInput input {
+    position: relative;
+    z-index: 1;
+    padding: 0 gap(m);
+    width: 100%;
+    height: 50px;
+    border: 1px solid #323262;
+    border-radius: 5px;
+    font-family: arial, sans-serif;
+    font-size: 1rem;
+    font-weight: regular; 
+}
+
+.fileUploadInputccat input{
+    position: relative;
+    z-index: 1;
+    padding: 0 gap(m);
+    width: 68%;
+    height: 50px;
+    margin-left: 16%;
+    border: 1px solid #323262;
+    border-radius: 5px;
+    font-family: arial, sans-serif;
+    font-size: 1rem;
+    font-weight: regular; 
+}
+
+.fileUploadInput input[type="file"] ,.fileUploadInputccat input[type="file"] {
+    padding: 0 gap(m); 
+}
+
+.fileUploadInput input[type="file"]::-webkit-file-upload-button,.fileUploadInputccat input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+    margin-left: 10px;
+    padding: 0;
+    height: 50px;
+    width: 0; 
+}
+     
+.fileUploadInput button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 0;
+    user-select: none;
+    background-color: #323262;
+    border-radius: 0 3px 3px 0;
+    font-size: 1rem;
+}
+
+.fileUploadInputccat button{
+    position: absolute;
+    right: 16%;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 0;
+    user-select: none;
+    background-color: #323262;
+    border-radius: 0 3px 3px 0;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.fileUploadInput button svg ,.fileUploadInputccat button svg{
+    width: auto;
+    height: 50%; 
+}
+
+.container {
+    border-radius: 3px;
+}
+
+@-moz-document url-prefix() {
+    .fileUploadInput button ,.fileUploadInputccat button{
+        display: none
+    }
+}
+
+#categories_link ul{
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    display: inline-flex;
+    border: none;
+}
+
+#categories_link li{
+    margin: 0;
+    text-align: center;
+}
+
+#categories_link li a{
+    display: block;
+    color: rgb(96, 174, 247);
+    text-decoration: none;
+    width: 100%;
+    min-width: 125px;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#categorymenu{
+    top:0px;
+    position: absolute;
+    background-color: inherit;
+    scroll-behavior: auto;
+    scrollbar-width: thin;
+    display: flex;
+    margin-top: 120px;
+}
+
+.courselistcontainer .dcnm{
+    margin-top: 9px;
+}
+
+.courselistcontainer #dcnm{
+    padding-left: 6px;
+}
+
+.courselistcontainer{
+    width: 290px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    border: 1px solid rgb(211, 211, 210);
+    box-shadow: 0px 8px 16px 0px rgba(92, 92, 92, 0.2);
+    padding-left: 5px;
+}
+
+#addCourseContent{
+    background-color: rgb(255, 255, 255);
+}
+
+#courseClick{
+    top: 180px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(187, 184, 184);
+    border-radius: 10px;
+    margin-left: 10px;
+    min-height: 280px;
+}
+
+#courseClick .courseCoverImg{
+    width: 222px;
+    height: 150px;
+    border: 1px solid rgb(240, 239, 239);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.logo{
+   width:50px;
+   height:50px;
+   margin: 15px;
+}
+
+.cancelimg{
+   top: 0;
+   right: 0;
+   position: absolute;
+   margin-top: 20px;
+   width: 25px;
+   margin-right: 25px;
+   cursor: pointer;
+}
+
+#loginContainer{
+   top:50%;	left:50%;	
+   transform:translate(-50%,-50%);	
+   position: absolute;
+   border: 1px solid rgb(255, 255, 255);
+   -webkit-box-shadow: 1px 1px 4px 3px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+   -moz-box-shadow:    1px 1px 4px 3px #ccc;  /* Firefox 3.5 - 3.6 */
+   box-shadow:         1px 1px 4px 3px #ccc;
+   border-radius: 25px;
+   padding : 20px;
+}
+
+#signup{
+   width:300px;
+   height: 37px;
+   border-radius: 25px;
+   margin-top: 5px;
+   margin-left: 10px;
+   font-size: 15px;
+   background-color: inherit;
+   border: 1px solid rgb(32, 112, 233);
+}
+
+#signup:hover, #signup:active{
+   background-color:rgb(32, 112, 233);
+   border: none;
+   color: white;
+}
+
+#agree{
+   font-size: 13.5px;
+   color: gray;
+   margin-left: 200px;
+   margin-top: 8px;
+}
+
+#socialmedialogin{
+   position: relative;
+   margin-top: 7%;
+   margin-left: 80px;
+   margin-right: 10px;
+}
+
+.vl{
+   border-left: 1px solid rgb(219, 214, 214);
+   height: 220px;
+}
+
+.google_signin{
+   margin-bottom: 20px;
+}
+
+.navbar{
+    min-width: 100% !important;
+}
+
+.card-text{
+    font-size: 15px !important;
+    color: black !important;
+}
+
+#profileBtn{
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+}
+
+.dropdown-item{
+    font-size: 14px !important;
+    font-weight: bold;
+}
+
+.dropdown-item:hover{
+    background-color: rgb(217, 220, 223) !important;
+}
+
+.open a:hover{
+    background-color: inherit !important;
+}
+
+.facebookBtn{
+    width: 225px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+    color: rgb(73, 73, 73);
+}
+  
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+}
